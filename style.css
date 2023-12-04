@@ -33,7 +33,7 @@
     /* Font family "sans-serif" */
     font-family: sans-serif;
     /* Centered text */
-    justify-content: center;
+    text-align: center;
     /* Line height ( idem height ) */
     line-height: 2rem;
     /* Display as a block */
@@ -51,6 +51,7 @@
     /* White border of 2px */
     border: #fff 2px solid;
     /* Rounded border */
+    border-radius: 100px;
 }
 .overlay>figure {
     /* No margin */
