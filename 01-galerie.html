@@ -11,7 +11,9 @@
 <body x-data="{showImg:'https://picsum.photos/id/237/400/300'}">
   <h1>Galerie</h1>
   <p>Lorem ipsum</p>
-  <div x-show="showImg" class="overlay" @keyup.escape.window="showImg=null">
+  <img src="https://picsum.photos/id/236/40/60" alt="miniature chiot" @click="showImg='https://picsum.photos/id/236/400/300'">
+  <img src="https://picsum.photos/id/237/40/60" alt="miniature chiot" @click="showImg='https://picsum.photos/id/237/400/300'">
+  <div x-show="showImg" class="overlay" @click="showImg=null">
     <figure><img :src="showImg" alt="image 237... un chiot "></figure>
   </div>
 </body>
