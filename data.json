@@ -20,18 +20,23 @@
         "url":"https://vuejs.org/"
     },
     {
-        "nom":"Alexandre",
-        "projet":"Vue.js",
-        "url":"https://vuejs.org/"
-    },
-    {
         "nom":"Sam",
-        "projet":"Vue.js",
-        "url":"https://vuejs.org/"
+        "projet":"ReactJs",
+        "url":"https://reactjs.org/"
     },
     {
         "nom":"Maxime",
         "projet":"Python",
         "url":"https://www.python.org/"
+    },
+    {
+        "nom":"Mélanie",
+        "projet":"Django",
+        "url":"https://www.djangoproject.com/"
+    },
+    {
+        "nom":"Vanessa",
+        "projet":"Symfony",
+        "url":"https://symfony.com/"
     }
 ]
