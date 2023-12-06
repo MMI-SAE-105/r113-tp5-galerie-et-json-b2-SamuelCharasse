@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <link rel="stylesheet" href="json.css">
     <title>JSON</title>
 </head>
 <body>
@@ -16,10 +17,10 @@
                 this.données = data;
             }
         }" x-init="fetchDonnées()">
-        <template x-for="obj in données" x-bind:key="obj.nom">
-            <li>
-                <span x-text="obj.nom">nom</span> :
-                <a :href="obj.url" x-text="obj.projet">Projet</a>
+        <template class="template" x-for="obj in données" x-bind:key="obj.nom">
+            <li class="template__li">
+                <p class="template__li--nom template__li--p"><span class="template__li--nom" x-text="obj.nom">nom</span>:</p>
+                <a class="template__li--link" :href="obj.url" x-text="obj.projet">Projet</a>
             </li>
         </template>
     </ul>
