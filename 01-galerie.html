@@ -8,12 +8,15 @@
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
   <title>Galerie</title>
 </head>
-<body x-data="{showImg:'https://picsum.photos/id/237/400/300'}">
+<body x-data="{showImg:''}">
   <h1>Galerie</h1>
   <a href="/index.html">Retour index</a>
   <p>Lorem ipsum</p>
   <img src="https://picsum.photos/id/236/40/60" alt="miniature chiot" @click="showImg='https://picsum.photos/id/236/400/300'">
   <img src="https://picsum.photos/id/237/40/60" alt="miniature chiot" @click="showImg='https://picsum.photos/id/237/400/300'">
+  <img src="https://picsum.photos/id/238/40/60" alt="miniature chiot" @click="showImg='https://picsum.photos/id/238/400/300'">
+  <img src="https://picsum.photos/id/239/40/60" alt="miniature chiot" @click="showImg='https://picsum.photos/id/239/400/300'">
+  <img src="https://picsum.photos/id/240/40/60" alt="miniature chiot" @click="showImg='https://picsum.photos/id/240/400/300'">
   <div x-show="showImg" class="overlay" @click="showImg=null">
     <figure><img :src="showImg" alt="image 237... un chiot "></figure>
   </div>
