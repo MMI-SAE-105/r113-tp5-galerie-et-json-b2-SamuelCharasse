@@ -21,7 +21,7 @@
         <template class="template" x-for="obj in données" x-bind:key="obj.nom">
             <li class="template__li">
                 <p class="template__li--nom template__li--p"><span class="template__li--nom" x-text="obj.nom">nom</span>:</p>
-                <a class="template__li--link" :href="obj.url" x-text="obj.projet">Projet</a>
+                <a class="template__li--link" :href="obj.url" x-text="obj.projet" target="_blank">Projet</a>
             </li>
         </template>
     </ul>
