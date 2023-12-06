@@ -28,5 +28,10 @@
         "nom":"Sam",
         "projet":"Vue.js",
         "url":"https://vuejs.org/"
+    },
+    {
+        "nom":"Maxime",
+        "projet":"Python",
+        "url":"https://www.python.org/"
     }
 ]
