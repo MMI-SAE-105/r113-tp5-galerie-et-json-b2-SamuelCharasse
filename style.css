@@ -69,3 +69,11 @@
     /* Height auto for keeping the ratio */
     height: auto;
 }
+.miniature {
+    transition: transform 0.3s ease-in-out;
+}
+
+.miniature:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+}
