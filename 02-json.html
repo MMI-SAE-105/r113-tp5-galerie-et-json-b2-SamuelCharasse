@@ -9,12 +9,14 @@
 <body>
     <h1>JSON</h1>
     <ul x-data="{
-        async données(){
-        const response = await fetch('data.json');
-        return await response.json();
-    }
-    }">
-        <template x-for="obj of données">
+            données: [],
+            async fetchDonnées() {
+                const resp = await fetch('data.json');
+                const data = await resp.json();
+                this.données = data;
+            }
+        }" x-init="fetchDonnées()">
+        <template x-for="obj in données" x-bind:key="obj.nom">
             <li>
                 <span x-text="obj.nom">nom</span> :
                 <a :href="obj.url" x-text="obj.projet">Projet</a>
